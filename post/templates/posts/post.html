@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+   {% block title %}Post Page{% endblock title %}
+   
+        {% block body %}
+              
+              <!-- Full Blog Post -->
+              <main class="flex-fill">
+                <div class="container my-5">
+                  <div class="card shadow-sm">
+                    <div class="card-body">
+                      <h2 class="card-title">{{post.content}}</h2>
+                      <p class="text-muted">Published on May 12, 2025 | by Admin</p>
+                      <hr />
+                      <p>{{post.paragraph}}</p>
+                      
+                    </div>
+                  </div>
+                </div>
+              </main>
+
+        {% endblock body %}
+       
